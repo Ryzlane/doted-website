@@ -603,18 +603,13 @@ button {
 /* ==================== CTA ==================== */
 .cta {
   padding: 100px 0;
-  background: linear-gradient(135deg, var(--primary) 0%, #8B5CF6 50%, var(--secondary) 100%);
+  background: var(--primary);
   position: relative;
   overflow: hidden;
 }
 
 .cta::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 50% 80% at 20% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 80% at 80% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
+  display: none;
 }
 
 .cta-content {
